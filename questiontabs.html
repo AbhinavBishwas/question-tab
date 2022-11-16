@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body style="padding: 20 px">
+    
+    <h1 class="title">Assignment</h1>
+ <div class="tabcontainer">
+    <div class="buttoncontainer">
+        <div class="ques"><button onclick="showpanel (0,'#59DAE2  ')">Question 1</button></div>
+        <div class="ques"><button onclick="showpanel (1,'#ff688a ')">Question2</button></div>
+        <div class="ques"><button onclick="showpanel (2,'#aaa2ef   ')">Question3</button>       </div>
+        <div class="ques"><button onclick="showpanel (3,'#239ac5')">Question4</button></div>
+        <div class="ques"><button onclick="showpanel (4,'#239ac5')">Question5</button></div>
+        <div class="ques"><button onclick="showpanel (5,'#239ac5')">Question6</button></div>
+        <div class="ques"><button onclick="showpanel (6,'#239ac5')">Question7</button></div>
+
+
+    </div>   
+        <div class="tabpanel">Question 3 </div>
+        <div class="tabpanel">Question 4 </div>
+        <div class="tabpanel">Question 1
+        <form >
+            <label for="minute">Minute</label>
+            <input id="minute" type="number">
+            <label for="seconds">seconds</label>
+            <input id="seconds" type="number">
+            <button onclick="timeEvent(this)" type="button" >Submit</button>
+        </form>    
+        </div>
+        <div class="tabpanel">Question 2 </div>
+        <div class="tabpanel">Question 5 </div>
+        <div class="tabpanel">Question 6 </div>
+    
+ </div>
+    <script src="javascript/tabsscript.js"></script>
+    <script>
+        function timeEvent(e){
+            
+            const minuteInput = document.getElementById('minute')
+            const secondsInput = document.getElementById('seconds')
+            console.log(minuteInput.value, ': ', secondsInput.value)
+        }
+    </script>
+</body>
+</html>
